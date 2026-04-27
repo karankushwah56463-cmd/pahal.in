@@ -3,43 +3,86 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Coupons World</title>
+<title>CouponsWorld</title>
 
 <style>
 body {
-    font-family: Arial;
     margin: 0;
-    background: #f5f5f5;
+    font-family: Arial;
+    background: #f4f4f4;
 }
+
+/* HEADER */
 .header {
     background: #ff6f00;
     color: white;
     padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+.nav a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+/* SEARCH */
+.search-box {
+    padding: 15px;
+    background: white;
     text-align: center;
-    font-size: 22px;
 }
+.search-box input {
+    width: 80%;
+    padding: 10px;
+}
+
+/* BANNER */
 .banner {
-    background: url('https://via.placeholder.com/1200x300') no-repeat center;
-    background-size: cover;
-    height: 200px;
+    background: linear-gradient(to right, #ff6f00, #ff9800);
+    color: white;
+    padding: 40px;
+    text-align: center;
 }
+
+/* DEALS */
 .section {
     padding: 20px;
+}
+.deals {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 15px;
 }
 .card {
     background: white;
     padding: 15px;
-    margin: 10px 0;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+.card img {
+    width: 100%;
 }
 .button {
-    display: inline-block;
-    padding: 10px 15px;
-    background: #28a745;
+    background: green;
     color: white;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 10px;
     text-decoration: none;
     border-radius: 5px;
+}
+
+/* FOOTER */
+.footer {
+    background: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
 }
 </style>
 
@@ -47,33 +90,68 @@ body {
 
 <body>
 
+<!-- HEADER -->
 <div class="header">
-🔥 Coupons World - Best Deals & Cashback
+    <div class="logo">🔥 CouponsWorld</div>
+    <div class="nav">
+        <a href="#">Home</a>
+        <a href="#">Stores</a>
+        <a href="#">Deals</a>
+        <a href="#">Login</a>
+    </div>
 </div>
 
-<div class="banner"></div>
+<!-- SEARCH -->
+<div class="search-box">
+    <input type="text" placeholder="Search deals, stores...">
+</div>
 
+<!-- BANNER -->
+<div class="banner">
+    <h1>Earn Cashback on Every Purchase 💰</h1>
+    <p>Top Deals from Amazon, Flipkart & More</p>
+</div>
+
+<!-- DEAL SECTION -->
 <div class="section">
-    <h2>Top Deals Today</h2>
+    <h2>🔥 Top Deals Today</h2>
 
-    <div class="card">
-        <h3>Amazon Sale - Up to 70% OFF</h3>
-        <p>Grab best offers on electronics & more</p>
-        <a class="button" href="#" target="_blank">Get Deal</a>
+    <div class="deals">
+
+        <div class="card">
+            <img src="https://via.placeholder.com/250">
+            <h3>Amazon Sale</h3>
+            <p>Up to 70% OFF</p>
+            <a href="#" class="button">Get Deal</a>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/250">
+            <h3>Flipkart Offers</h3>
+            <p>Best Mobile Deals</p>
+            <a href="#" class="button">Get Deal</a>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/250">
+            <h3>Myntra Sale</h3>
+            <p>Flat 50% OFF</p>
+            <a href="#" class="button">Get Deal</a>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/250">
+            <h3>Ajio Fashion</h3>
+            <p>Extra Cashback Available</p>
+            <a href="#" class="button">Get Deal</a>
+        </div>
+
     </div>
+</div>
 
-    <div class="card">
-        <h3>Flipkart Big Discounts</h3>
-        <p>Latest deals on mobiles & fashion</p>
-        <a class="button" href="#" target="_blank">Get Deal</a>
-    </div>
-
-    <div class="card">
-        <h3>Myntra Fashion Sale</h3>
-        <p>Flat 50% OFF on clothing</p>
-        <a class="button" href="#" target="_blank">Get Deal</a>
-    </div>
-
+<!-- FOOTER -->
+<div class="footer">
+    © 2026 CouponsWorld | All Rights Reserved
 </div>
 
 </body>
