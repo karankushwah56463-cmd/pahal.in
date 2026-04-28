@@ -1,0 +1,52 @@
+body { background:#f4f4f4; font-family: Arial; }
+
+.header {
+    background:#ff6f00;
+    color:white;
+    padding:15px;
+    display:flex;
+    justify-content:space-between;
+}
+
+.logo { font-size:20px; font-weight:bold; }
+
+.banner {
+    background: url('https://images.unsplash.com/photo-1607083206968-13611e3d76db');
+    background-size:cover;
+    color:white;
+    padding:80px 20px;
+    text-align:center;
+}
+
+.banner h1 {
+    background: rgba(0,0,0,0.6);
+    display:inline-block;
+    padding:10px;
+}
+
+.card {
+    border:none;
+    border-radius:10px;
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.card:hover {
+    transform:scale(1.05);
+}
+
+.card img {
+    height:180px;
+    object-fit:cover;
+}
+
+.btn-deal {
+    background:#28a745;
+    color:white;
+    width:100%;
+}
+
+.section-title {
+    font-weight:bold;
+    margin:20px 0;
+}
