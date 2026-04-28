@@ -5,153 +5,87 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CouponsWorld</title>
 
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
 <style>
-body {
-    margin: 0;
-    font-family: Arial;
-    background: #f4f4f4;
-}
+body { background:#f5f5f5; }
 
-/* HEADER */
 .header {
-    background: #ff6f00;
-    color: white;
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-}
-.logo {
-    font-size: 20px;
-    font-weight: bold;
-}
-.nav a {
-    color: white;
-    margin-left: 15px;
-    text-decoration: none;
+    background:#ff6f00;
+    color:white;
+    padding:15px;
+    font-size:22px;
+    text-align:center;
 }
 
-/* SEARCH */
-.search-box {
-    padding: 15px;
-    background: white;
-    text-align: center;
-}
-.search-box input {
-    width: 80%;
-    padding: 10px;
-}
-
-/* BANNER */
 .banner {
-    background: linear-gradient(to right, #ff6f00, #ff9800);
-    color: white;
-    padding: 40px;
-    text-align: center;
+    background: linear-gradient(to right,#ff6f00,#ff9800);
+    color:white;
+    padding:40px;
+    text-align:center;
 }
 
-/* DEALS */
-.section {
-    padding: 20px;
-}
-.deals {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-    gap: 15px;
-}
-.card {
-    background: white;
-    padding: 15px;
-    border-radius: 10px;
-    text-align: center;
-}
-.card img {
-    width: 100%;
-}
-.button {
-    background: green;
-    color: white;
-    padding: 10px;
-    display: inline-block;
-    margin-top: 10px;
-    text-decoration: none;
-    border-radius: 5px;
-}
+.card img { height:150px; object-fit:cover; }
 
-/* FOOTER */
-.footer {
-    background: #333;
-    color: white;
-    padding: 15px;
-    text-align: center;
+.btn-deal {
+    background:green;
+    color:white;
 }
 </style>
-
 </head>
 
 <body>
 
-<!-- HEADER -->
 <div class="header">
-    <div class="logo">🔥 CouponsWorld</div>
-    <div class="nav">
-        <a href="#">Home</a>
-        <a href="#">Stores</a>
-        <a href="#">Deals</a>
-        <a href="#">Login</a>
-    </div>
+🔥 CouponsWorld - Best Deals
 </div>
 
-<!-- SEARCH -->
-<div class="search-box">
-    <input type="text" placeholder="Search deals, stores...">
-</div>
-
-<!-- BANNER -->
 <div class="banner">
-    <h1>Earn Cashback on Every Purchase 💰</h1>
-    <p>Top Deals from Amazon, Flipkart & More</p>
+<h2>Earn Cashback on Every Deal 💰</h2>
+<p>Top offers from Amazon & Flipkart</p>
 </div>
 
-<!-- DEAL SECTION -->
-<div class="section">
-    <h2>🔥 Top Deals Today</h2>
+<div class="container mt-4">
+<div class="row">
 
-    <div class="deals">
-
-        <div class="card">
-            <img src="https://via.placeholder.com/250">
-            <h3>Amazon Sale</h3>
-            <p>Up to 70% OFF</p>
-            <a href="#" class="button">Get Deal</a>
-        </div>
-
-        <div class="card">
-            <img src="https://via.placeholder.com/250">
-            <h3>Flipkart Offers</h3>
-            <p>Best Mobile Deals</p>
-            <a href="#" class="button">Get Deal</a>
-        </div>
-
-        <div class="card">
-            <img src="https://via.placeholder.com/250">
-            <h3>Myntra Sale</h3>
-            <p>Flat 50% OFF</p>
-            <a href="#" class="button">Get Deal</a>
-        </div>
-
-        <div class="card">
-            <img src="https://via.placeholder.com/250">
-            <h3>Ajio Fashion</h3>
-            <p>Extra Cashback Available</p>
-            <a href="#" class="button">Get Deal</a>
-        </div>
-
-    </div>
+<div class="col-md-3">
+<div class="card p-2">
+<img src="https://via.placeholder.com/300">
+<h5>Amazon Sale</h5>
+<p>Up to 70% OFF</p>
+<a href="#" class="btn btn-deal">Get Deal</a>
+</div>
 </div>
 
-<!-- FOOTER -->
-<div class="footer">
-    © 2026 CouponsWorld | All Rights Reserved
+<div class="col-md-3">
+<div class="card p-2">
+<img src="https://via.placeholder.com/300">
+<h5>Flipkart Deals</h5>
+<p>Best Mobile Offers</p>
+<a href="#" class="btn btn-deal">Get Deal</a>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card p-2">
+<img src="https://via.placeholder.com/300">
+<h5>Myntra Sale</h5>
+<p>Flat 50% OFF</p>
+<a href="#" class="btn btn-deal">Get Deal</a>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card p-2">
+<img src="https://via.placeholder.com/300">
+<h5>Ajio Offers</h5>
+<p>Extra Cashback</p>
+<a href="#" class="btn btn-deal">Get Deal</a>
+</div>
+</div>
+
+</div>
 </div>
 
 </body>
